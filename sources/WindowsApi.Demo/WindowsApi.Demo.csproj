@@ -85,13 +85,37 @@
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Examples\GetSystemInfoExample.cs" />
+    <Compile Include="Examples\GetSystemInfoExampleView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Examples\GetSystemInfoExampleView.Designer.cs">
+      <DependentUpon>GetSystemInfoExampleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\GlobalMemoryStatusExample.cs" />
+    <Compile Include="Examples\GlobalMemoryStatusExampleView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Examples\GlobalMemoryStatusExampleView.Designer.cs">
+      <DependentUpon>GlobalMemoryStatusExampleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\IExample.cs" />
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Content Include="App.ico" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Examples\GetSystemInfoExampleView.resx">
+      <DependentUpon>GetSystemInfoExampleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\GlobalMemoryStatusExampleView.resx">
+      <DependentUpon>GlobalMemoryStatusExampleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +127,7 @@
       <Name>WindowsApi</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent />

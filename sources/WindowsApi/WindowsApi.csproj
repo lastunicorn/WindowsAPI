@@ -41,17 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreationDisposition.cs" />
     <Compile Include="DataSize.cs" />
     <Compile Include="DataSizeFormatOptions.cs" />
     <Compile Include="DataSizeUnit.cs" />
+    <Compile Include="DesiredAccess.cs" />
+    <Compile Include="FlagsAndAttributes.cs" />
     <Compile Include="Kernel32.cs" />
+    <Compile Include="Kernel32.Files.cs" />
     <Compile Include="MEMORYSTATUS.cs" />
     <Compile Include="MEMORYSTATUSEX.cs" />
+    <Compile Include="MoveMethod.cs" />
     <Compile Include="OSVERSIONINFOEX.cs" />
     <Compile Include="OSVERSIONINFOEXA.cs" />
     <Compile Include="Processor.cs" />
     <Compile Include="ProcessorArchitecture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShareMode.cs" />
     <Compile Include="SYSTEM_INFO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

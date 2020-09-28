@@ -11,7 +11,7 @@ namespace DustInTheWind.WindowsApi.Demo
         [STAThread]
         private static void Main()
         {
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }

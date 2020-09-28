@@ -5,7 +5,7 @@ namespace DustInTheWind.WindowsApi
     /// <summary>
     /// see also: https://referencesource.microsoft.com/#mscorlib
     /// </summary>
-    public class Kernel32
+    public partial class Kernel32
     {
         [DllImport("kernel32.dll", SetLastError = true)]
         public static extern void GetSystemInfo(ref SYSTEM_INFO systemInfo);
