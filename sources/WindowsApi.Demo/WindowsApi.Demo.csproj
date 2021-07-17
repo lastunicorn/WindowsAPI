@@ -123,11 +123,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WindowsApi\WindowsApi.csproj">
-      <Project>{db393ce6-3f96-4005-97be-8d2ed241c3f5}</Project>
+      <Project>{f91a19a9-a552-479e-9abb-34877007a035}</Project>
       <Name>WindowsApi</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent />
