@@ -70,7 +70,7 @@ namespace DustInTheWind.WindowsApi.Winbase
         /// DLL                         Kernel32.dll
         /// </requirements>
         [DllImport("kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        private static extern EXECUTION_STATE SetThreadExecutionState(EXECUTION_STATE esFlags);
+        public static extern EXECUTION_STATE SetThreadExecutionState(EXECUTION_STATE esFlags);
 
         [DllImport("kernel32.dll")]
         public static extern bool VerifyVersionInfo([In] ref OSVERSIONINFOEXA lpVersionInfo, uint dwTypeMask, ulong dwlConditionMask);

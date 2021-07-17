@@ -55,6 +55,6 @@ namespace DustInTheWind.WindowsApi.Errhandlingapi
         /// DLL                         Kernel32.dll
         /// </requirements>
         [DllImport("kernel32.dll")]
-        private static extern uint GetLastError();
+        public static extern uint GetLastError();
     }
 }
