@@ -1,32 +1,43 @@
 using System.Runtime.InteropServices;
 
-namespace DustInTheWind.WindowsApi
+namespace DustInTheWind.WindowsApi.Winbase
 {
     /// <summary>
+    /// Contains information about the current state of both physical and virtual memory.
+    /// The <see cref="Winbase.GlobalMemoryStatus"/> function stores information in a <see cref="MEMORYSTATUS"/> structure.
+    /// 
+    /// Minimum supported client:   Windows XP [desktop apps only]
+    /// Minimum supported server:   Windows Server 2003 [desktop apps only]
+    /// 
+    /// see also: https://docs.microsoft.com/en-us/windows/win32/api/winbase/ns-winbase-memorystatus
+    /// </summary>
+    ///
+    /// <remarks>
     /// <para>
-    /// MEMORYSTATUS reflects the state of memory at the time of the call.
+    /// <see cref="MEMORYSTATUS"/> reflects the state of memory at the time of the call.
     /// It also reflects the size of the paging file at that time.
     /// The operating system can enlarge the paging file up to the
     /// maximum size set by the administrator.
     /// </para>
     /// <para>
     /// On computers with more than 4 GB of memory,
-    /// the MEMORYSTATUS structure can return incorrect information,
+    /// the <see cref="MEMORYSTATUS"/> structure can return incorrect information,
     /// reporting a value of –1 to indicate an overflow.
-    /// If your application is at risk for this behavior,
-    /// use the GlobalMemoryStatusEx function instead of the GlobalMemoryStatus function.
+    /// If your application is at risk for this behavior, use the <see cref="Sysinfoapi.Sysinfoapi.GlobalMemoryStatusEx"/>
+    /// function instead of the <see cref="Winbase.GlobalMemoryStatus"/> function.
     /// </para>
+    /// </remarks>
     ///
-    /// Minimum supported client:   Windows XP [desktop apps only]
-    /// Minimum supported server:   Windows Server 2003 [desktop apps only]
-    /// 
-    /// see also: https://docs.microsoft.com/en-us/windows/win32/api/winbase/ns-winbase-memorystatus
-    /// </summary>
+    /// <requirements>
+    /// Minimum supported client    Windows XP [desktop apps only]
+    /// Minimum supported server    Windows Server 2003 [desktop apps only]
+    /// Header                      winbase.h(include Windows.h)
+    /// </requirements>
     [StructLayout(LayoutKind.Sequential)]
     public struct MEMORYSTATUS
     {
         /// <summary>
-        /// The size of the MEMORYSTATUS data structure, in bytes.
+        /// The size of the <see cref="MEMORYSTATUS"/> data structure, in bytes.
         /// You do not need to set this member before calling the GlobalMemoryStatus
         /// function; the function sets it.
         /// </summary>

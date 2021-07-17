@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace DustInTheWind.WindowsApi
+namespace DustInTheWind.WindowsApi.Winnt
 {
 #pragma warning disable S101 // Types should be named in camel case
 #pragma warning disable S3459 // Unassigned members should be removed

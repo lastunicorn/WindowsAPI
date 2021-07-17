@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using DustInTheWind.WindowsApi.Winbase;
 
 namespace DustInTheWind.WindowsApi.Demo.Examples
 {
@@ -13,7 +14,7 @@ namespace DustInTheWind.WindowsApi.Demo.Examples
         public void Execute()
         {
             MEMORYSTATUS memorystatus = new MEMORYSTATUS();
-            Kernel32.GlobalMemoryStatus(ref memorystatus);
+            Winbase.Winbase.GlobalMemoryStatus(ref memorystatus);
 
             view.Memorystatus = memorystatus;
         }

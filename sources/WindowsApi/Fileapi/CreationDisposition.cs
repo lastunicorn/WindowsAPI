@@ -1,4 +1,4 @@
-﻿namespace DustInTheWind.WindowsApi
+﻿namespace DustInTheWind.WindowsApi.Fileapi
 {
     public enum CreationDisposition : uint
     {

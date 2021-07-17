@@ -1,4 +1,4 @@
-namespace DustInTheWind.WindowsApi
+namespace DustInTheWind.WindowsApi.Sysinfoapi
 {
     public enum ProcessorArchitecture : ushort
     {

@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using DustInTheWind.WindowsApi.Sysinfoapi;
 
 namespace DustInTheWind.WindowsApi.Demo.Examples
 {
@@ -13,7 +14,7 @@ namespace DustInTheWind.WindowsApi.Demo.Examples
         public void Execute()
         {
             SYSTEM_INFO systemInfo = new SYSTEM_INFO();
-            Kernel32.GetSystemInfo(ref systemInfo);
+            Sysinfoapi.Sysinfoapi.GetSystemInfo(ref systemInfo);
 
             view.SystemInfo = systemInfo;
         }

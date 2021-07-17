@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Windows.Forms;
+using DustInTheWind.WindowsApi.Winbase;
 
 namespace DustInTheWind.WindowsApi.Demo.Examples
 {
