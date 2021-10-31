@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>DustInTheWind.WindowsApi.Core</AssemblyName>
+        <RootNamespace>DustInTheWind.WindowsApi.Core</RootNamespace>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <Description>A C# library of windows api functions.</Description>
+
+        <PackageId>DustInTheWind.WindowsApi.Core</PackageId>
+        <PackageTags>winapi windows api csharp kernel32</PackageTags>
+    </PropertyGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+<Project>
+    <PropertyGroup>
+        <Company>Dust in the Wind</Company>
+        <Authors>Dust in the Wind</Authors>
+        <Product>Windows API .NET</Product>
+        <Copyright>Copyright © Dust in the Wind 2020-2021</Copyright>
+        <Version>1.0.2.0</Version>
+        <NeutralLanguage>en</NeutralLanguage>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <PackageProjectUrl>https://github.com/lastunicorn/WindowsApi</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/lastunicorn/WindowsApi</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="..\LICENSE.txt" Link="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
+        <Content Include="..\README.md" Link="README.md" Pack="true" PackagePath="README.md" />
+    </ItemGroup>
+</Project>

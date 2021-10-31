@@ -122,9 +122,17 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WindowsApi\WindowsApi.csproj">
+    <ProjectReference Include="..\WindowsApi.Sysinfoapi\WindowsApi.Sysinfoapi.csproj">
+      <Project>{1821B79D-CA11-4A2C-9C80-06919F90F47D}</Project>
+      <Name>WindowsApi.Sysinfoapi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsApi.Winbase\WindowsApi.Winbase.csproj">
+      <Project>{7E1885AE-CACB-4B1D-AF23-A0E95FB9F66D}</Project>
+      <Name>WindowsApi.Winbase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsApi.Core\WindowsApi.Core.csproj">
       <Project>{f91a19a9-a552-479e-9abb-34877007a035}</Project>
-      <Name>WindowsApi</Name>
+      <Name>WindowsApi.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

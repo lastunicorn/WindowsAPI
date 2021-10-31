@@ -4,7 +4,32 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApi.Demo", "WindowsApi.Demo\WindowsApi.Demo.csproj", "{97BE45C3-86EF-41A6-8114-DCD2B946BAE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApi", "WindowsApi\WindowsApi.csproj", "{F91A19A9-A552-479E-9ABB-34877007A035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Core", "WindowsApi.Core\WindowsApi.Core.csproj", "{F91A19A9-A552-479E-9ABB-34877007A035}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Winuser", "WindowsApi.Winuser\WindowsApi.Winuser.csproj", "{46E6A73F-158E-413A-8E3F-F6E7B46DE087}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Windef", "WindowsApi.Windef\WindowsApi.Windef.csproj", "{1C30940C-45BA-4A07-8D37-A0F4507FA2DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Wingdi", "WindowsApi.Wingdi\WindowsApi.Wingdi.csproj", "{C842043F-A7EF-43EB-9A68-C6857E663A2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Fileapi", "WindowsApi.Fileapi\WindowsApi.Fileapi.csproj", "{3372DC18-799A-47EC-A4C1-6534D29D420E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Sysinfoapi", "WindowsApi.Sysinfoapi\WindowsApi.Sysinfoapi.csproj", "{1821B79D-CA11-4A2C-9C80-06919F90F47D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Winbase", "WindowsApi.Winbase\WindowsApi.Winbase.csproj", "{7E1885AE-CACB-4B1D-AF23-A0E95FB9F66D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Winnt", "WindowsApi.Winnt\WindowsApi.Winnt.csproj", "{909A996F-059E-40EC-9A42-48A39DF85334}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Handleapi", "WindowsApi.Handleapi\WindowsApi.Handleapi.csproj", "{D2A075A9-1562-48C9-8109-A7CAD94A137F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Errhandlingapi", "WindowsApi.Errhandlingapi\WindowsApi.Errhandlingapi.csproj", "{7CC769CE-DEB3-40D7-9ED8-4AA4EA1E3798}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02F7E6C1-B02A-42B0-8C72-C8263DF9B613}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +45,42 @@ Global
 		{F91A19A9-A552-479E-9ABB-34877007A035}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F91A19A9-A552-479E-9ABB-34877007A035}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F91A19A9-A552-479E-9ABB-34877007A035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E6A73F-158E-413A-8E3F-F6E7B46DE087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E6A73F-158E-413A-8E3F-F6E7B46DE087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E6A73F-158E-413A-8E3F-F6E7B46DE087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E6A73F-158E-413A-8E3F-F6E7B46DE087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C30940C-45BA-4A07-8D37-A0F4507FA2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C30940C-45BA-4A07-8D37-A0F4507FA2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C30940C-45BA-4A07-8D37-A0F4507FA2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C30940C-45BA-4A07-8D37-A0F4507FA2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C842043F-A7EF-43EB-9A68-C6857E663A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C842043F-A7EF-43EB-9A68-C6857E663A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C842043F-A7EF-43EB-9A68-C6857E663A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C842043F-A7EF-43EB-9A68-C6857E663A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3372DC18-799A-47EC-A4C1-6534D29D420E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3372DC18-799A-47EC-A4C1-6534D29D420E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3372DC18-799A-47EC-A4C1-6534D29D420E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3372DC18-799A-47EC-A4C1-6534D29D420E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1821B79D-CA11-4A2C-9C80-06919F90F47D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1821B79D-CA11-4A2C-9C80-06919F90F47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1821B79D-CA11-4A2C-9C80-06919F90F47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1821B79D-CA11-4A2C-9C80-06919F90F47D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1885AE-CACB-4B1D-AF23-A0E95FB9F66D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1885AE-CACB-4B1D-AF23-A0E95FB9F66D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1885AE-CACB-4B1D-AF23-A0E95FB9F66D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1885AE-CACB-4B1D-AF23-A0E95FB9F66D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909A996F-059E-40EC-9A42-48A39DF85334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909A996F-059E-40EC-9A42-48A39DF85334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909A996F-059E-40EC-9A42-48A39DF85334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909A996F-059E-40EC-9A42-48A39DF85334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A075A9-1562-48C9-8109-A7CAD94A137F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A075A9-1562-48C9-8109-A7CAD94A137F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A075A9-1562-48C9-8109-A7CAD94A137F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A075A9-1562-48C9-8109-A7CAD94A137F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC769CE-DEB3-40D7-9ED8-4AA4EA1E3798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC769CE-DEB3-40D7-9ED8-4AA4EA1E3798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC769CE-DEB3-40D7-9ED8-4AA4EA1E3798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC769CE-DEB3-40D7-9ED8-4AA4EA1E3798}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
