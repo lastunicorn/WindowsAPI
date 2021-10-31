@@ -1,7 +1,6 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
-namespace WindowsApi.Windef
+namespace DustInTheWind.WindowsApi.Windef
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct RECT

@@ -23,6 +23,12 @@ namespace DustInTheWind.WindowsApi.Demo
             ExecuteExample(globalMemoryStatusExample);
         }
 
+        private void buttonTakeScreenshot_Click(object sender, EventArgs e)
+        {
+            TakeScreenshotExample takeScreenshotExample = new TakeScreenshotExample();
+            ExecuteExample(takeScreenshotExample);
+        }
+
         private void ExecuteExample(IExample example)
         {
             try

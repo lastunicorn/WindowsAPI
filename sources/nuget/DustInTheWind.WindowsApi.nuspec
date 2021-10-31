@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DustInTheWind.WindowsApi</id>
+    <version>$version$</version>
+    <authors>Dust in the Wind</authors>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://github.com/lastunicorn/WindowsApi</projectUrl>
+    <description>A C# library of windows api functions.</description>
+    <copyright>Copyright © Dust in the Wind 2020-2021</copyright>
+    <tags>winapi windows api csharp kernel32</tags>
+    <readme>README.md</readme>
+    <repository type="git" url="https://github.com/lastunicorn/WindowsApi" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="DustInTheWind.WindowsApi.Core" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Errhandlingapi" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Fileapi" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Handleapi" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Sysinfoapi" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Winbase" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Windef" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Wingdi" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Winnt" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Winuser" version="$version$" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\LICENSE.txt" target="LICENSE.txt" />
+    <file src="..\README.md" target="README.md" />
+  </files>
+</package>

@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+using DustInTheWind.WindowsApi.Core;
 
 namespace DustInTheWind.WindowsApi.Winbase
 {

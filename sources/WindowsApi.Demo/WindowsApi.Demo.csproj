@@ -100,6 +100,14 @@
       <DependentUpon>GlobalMemoryStatusExampleView.cs</DependentUpon>
     </Compile>
     <Compile Include="Examples\IExample.cs" />
+    <Compile Include="Examples\ScreenCapture.cs" />
+    <Compile Include="Examples\TakeScreenshotExample.cs" />
+    <Compile Include="Examples\TakeScreenshotExampleView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Examples\TakeScreenshotExampleView.Designer.cs">
+      <DependentUpon>TakeScreenshotExampleView.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Examples\GlobalMemoryStatusExampleView.resx">
       <DependentUpon>GlobalMemoryStatusExampleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examples\TakeScreenshotExampleView.resx">
+      <DependentUpon>TakeScreenshotExampleView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -133,6 +144,18 @@
     <ProjectReference Include="..\WindowsApi.Core\WindowsApi.Core.csproj">
       <Project>{f91a19a9-a552-479e-9abb-34877007a035}</Project>
       <Name>WindowsApi.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsApi.Windef\WindowsApi.Windef.csproj">
+      <Project>{1C30940C-45BA-4A07-8D37-A0F4507FA2DD}</Project>
+      <Name>WindowsApi.Windef</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsApi.Wingdi\WindowsApi.Wingdi.csproj">
+      <Project>{C842043F-A7EF-43EB-9A68-C6857E663A2F}</Project>
+      <Name>WindowsApi.Wingdi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsApi.Winuser\WindowsApi.Winuser.csproj">
+      <Project>{46E6A73F-158E-413A-8E3F-F6E7B46DE087}</Project>
+      <Name>WindowsApi.Winuser</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

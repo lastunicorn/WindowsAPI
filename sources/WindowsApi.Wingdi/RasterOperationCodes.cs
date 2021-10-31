@@ -1,4 +1,4 @@
-﻿namespace WindowsApi.Wingdi
+﻿namespace DustInTheWind.WindowsApi.Wingdi
 {
     public static class RasterOperationCodes
     {

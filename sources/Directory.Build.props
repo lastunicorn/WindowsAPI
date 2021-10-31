@@ -4,7 +4,7 @@
         <Authors>Dust in the Wind</Authors>
         <Product>Windows API .NET</Product>
         <Copyright>Copyright © Dust in the Wind 2020-2021</Copyright>
-        <Version>1.0.2.0</Version>
+        <Version>1.1.0.0</Version>
         <NeutralLanguage>en</NeutralLanguage>
         <RepositoryType>git</RepositoryType>
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>

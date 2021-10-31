@@ -3,7 +3,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 
-namespace DustInTheWind.WindowsApi
+namespace DustInTheWind.WindowsApi.Core
 {
     /// <summary>
     /// Represents the size of some data.

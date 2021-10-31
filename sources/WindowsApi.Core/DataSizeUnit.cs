@@ -1,4 +1,4 @@
-﻿namespace DustInTheWind.WindowsApi
+﻿namespace DustInTheWind.WindowsApi.Core
 {
     /// <summary>
     /// The measurement unit for data.

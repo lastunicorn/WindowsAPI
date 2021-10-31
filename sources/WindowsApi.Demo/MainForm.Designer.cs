@@ -34,6 +34,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelAll = new System.Windows.Forms.Panel();
+            this.buttonTakeScreenshot = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelAll.SuspendLayout();
@@ -51,6 +52,7 @@
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 38);
             this.panel1.Name = "panel1";
@@ -73,9 +75,10 @@
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Controls.Add(this.buttonGetSystemInfo);
             this.flowLayoutPanel1.Controls.Add(this.buttonGlobalMemoryStatus);
+            this.flowLayoutPanel1.Controls.Add(this.buttonTakeScreenshot);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(312, 29);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(468, 29);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel1
@@ -103,6 +106,16 @@
             this.panelAll.Size = new System.Drawing.Size(800, 450);
             this.panelAll.TabIndex = 5;
             // 
+            // buttonTakeScreenshot
+            // 
+            this.buttonTakeScreenshot.Location = new System.Drawing.Point(315, 3);
+            this.buttonTakeScreenshot.Name = "buttonTakeScreenshot";
+            this.buttonTakeScreenshot.Size = new System.Drawing.Size(150, 23);
+            this.buttonTakeScreenshot.TabIndex = 2;
+            this.buttonTakeScreenshot.Text = "Take Screenshot";
+            this.buttonTakeScreenshot.UseVisualStyleBackColor = true;
+            this.buttonTakeScreenshot.Click += new System.EventHandler(this.buttonTakeScreenshot_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,5 +140,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panelAll;
+        private System.Windows.Forms.Button buttonTakeScreenshot;
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DustInTheWind.WindowsApi
+namespace DustInTheWind.WindowsApi.Core
 {
     public class DataSizeFormatOptions
     {

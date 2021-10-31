@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using WindowsApi.Windef;
+using DustInTheWind.WindowsApi.Windef;
 
-namespace WindowsApi.Winuser
+namespace DustInTheWind.WindowsApi.Winuser
 {
     public static class Winuser
     {
