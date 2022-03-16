@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>DustInTheWind.WindowsApi.ProcessEnv</AssemblyName>
+        <RootNamespace>DustInTheWind.WindowsApi.ProcessEnv</RootNamespace>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <Description>A C# library of windows api functions.</Description>
+
+        <PackageId>DustInTheWind.WindowsApi.ProcessEnv</PackageId>
+        <PackageTags>winapi windows api csharp kernel32 processenv</PackageTags>
+    </PropertyGroup>
+
+</Project>

@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApi.ProcessEnv", "WindowsApi.ProcessEnv\WindowsApi.ProcessEnv.csproj", "{8ABB9240-BB85-4123-9363-29A15CBA7E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApi.ConsoleApi", "WindowsApi.ConsoleApi\WindowsApi.ConsoleApi.csproj", "{966A8D95-0AA8-4096-9FA7-6E62F4304C15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{7CC769CE-DEB3-40D7-9ED8-4AA4EA1E3798}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CC769CE-DEB3-40D7-9ED8-4AA4EA1E3798}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CC769CE-DEB3-40D7-9ED8-4AA4EA1E3798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABB9240-BB85-4123-9363-29A15CBA7E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABB9240-BB85-4123-9363-29A15CBA7E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABB9240-BB85-4123-9363-29A15CBA7E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABB9240-BB85-4123-9363-29A15CBA7E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{966A8D95-0AA8-4096-9FA7-6E62F4304C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{966A8D95-0AA8-4096-9FA7-6E62F4304C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{966A8D95-0AA8-4096-9FA7-6E62F4304C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{966A8D95-0AA8-4096-9FA7-6E62F4304C15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
