@@ -33,5 +33,61 @@ namespace DustInTheWind.WindowsApi.Winuser
 
         [DllImport("user32.dll")]
         public static extern IntPtr GetWindowRect(IntPtr hWnd, ref RECT rect);
+
+        /// <summary>
+        /// Locks the workstation's display. Locking a workstation protects it from unauthorized use.
+        /// </summary>
+        /// 
+        /// <returns>
+        /// <para>
+        /// If the function succeeds, the return value is nonzero. Because the function executes
+        /// asynchronously, a nonzero return value indicates that the operation has been initiated.
+        /// It does not indicate whether the workstation has been successfully locked.
+        /// </para>
+        /// <para>
+        /// If the function fails, the return value is zero.
+        /// To get extended error information, call GetLastError.
+        /// </para>
+        /// </returns>
+        ///
+        /// <requirements>
+        /// Minimum supported client 	Windows XP [desktop apps | UWP apps]
+        /// Minimum supported server 	Windows Server 2003 [desktop apps | UWP apps]
+        /// Target Platform 	        Windows
+        /// Header 	                    winuser.h (include Windows.h)
+        /// Library 	                User32.lib
+        /// DLL 	                    User32.dll
+        /// API set 	                ext-ms-win-ntuser-misc-l1-5-1 (introduced in Windows 10, version 10.0.14393)
+        /// </requirements>
+        [DllImport("user32.dll")]
+        public static extern int LockWorkStation();
+
+        /// <summary>
+        /// Logs off the interactive user, shuts down the system, or shuts down and restarts the system.
+        /// It sends the WM_QUERYENDSESSION message to all applications to determine if they can be terminated.
+        /// </summary>
+        /// 
+        /// <param name="uFlags">The shutdown type.</param>
+        /// 
+        /// <param name="dwReason">
+        /// The reason for initiating the shutdown.
+        /// On Windows 2000 this parameter is ignored.
+        /// </param>
+        /// 
+        /// <returns>
+        /// <para>
+        /// If the function succeeds, the return value is nonzero. Because the function executes
+        /// asynchronously, a nonzero return value indicates that the shutdown has been initiated.
+        /// It does not indicate whether the shutdown will succeed. It is possible that the system,
+        /// the user, or another application will abort the shutdown.
+        /// </para>
+        /// <para>
+        /// If the function fails, the return value is zero.
+        /// To get extended error information, call GetLastError.
+        /// </para>
+        /// </returns>
+        /// 
+        [DllImport("user32.dll")]
+        public static extern int ExitWindowsEx(ExitWindowsFlags uFlags, SystemShutdownReason dwReason);
     }
 }

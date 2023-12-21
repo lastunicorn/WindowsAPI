@@ -4,9 +4,12 @@
 $packages = @(
 	"DustInTheWind.WindowsApi.$version.nupkg",
 	"DustInTheWind.WindowsApi.Core.$version.nupkg",
+	"DustInTheWind.WindowsApi.ConsoleApi.$version.nupkg",
 	"DustInTheWind.WindowsApi.Errhandlingapi.$version.nupkg",
 	"DustInTheWind.WindowsApi.Fileapi.$version.nupkg",
 	"DustInTheWind.WindowsApi.Handleapi.$version.nupkg",
+	"DustInTheWind.WindowsApi.ProcessEnv.$version.nupkg",
+	"DustInTheWind.WindowsApi.Processthreadsapi.$version.nupkg",
 	"DustInTheWind.WindowsApi.Sysinfoapi.$version.nupkg",
 	"DustInTheWind.WindowsApi.Winbase.$version.nupkg",
 	"DustInTheWind.WindowsApi.Windef.$version.nupkg",

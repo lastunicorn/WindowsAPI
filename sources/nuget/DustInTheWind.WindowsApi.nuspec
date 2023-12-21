@@ -15,9 +15,12 @@
     <dependencies>
       <group targetFramework=".NETStandard2.0">
         <dependency id="DustInTheWind.WindowsApi.Core" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.ConsoleApi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Errhandlingapi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Fileapi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Handleapi" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.ProcessEnv" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Processthreadsapi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Sysinfoapi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Winbase" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Windef" version="$version$" exclude="Build,Analyzers" />

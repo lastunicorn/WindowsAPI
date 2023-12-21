@@ -90,5 +90,43 @@ namespace DustInTheWind.WindowsApi.Winbase
 
         [DllImport("kernel32.dll")]
         public static extern bool VerifyVersionInfo([In] ref OSVERSIONINFOEXA lpVersionInfo, uint dwTypeMask, ulong dwlConditionMask);
+
+        /// <summary>
+        /// The LookupPrivilegeValue function retrieves the locally unique identifier (LUID) used on a
+        /// specified system to locally represent the specified privilege name.
+        /// </summary>
+        /// 
+        /// <param name="lpSystemName">
+        /// A pointer to a null-terminated string that specifies the name of
+        /// the system on which the privilege name is retrieved. If a null string is specified, the function
+        /// attempts to find the privilege name on the local system.
+        /// </param>
+        /// 
+        /// <param name="lpName">
+        /// A pointer to a null-terminated string that specifies the name of the privilege,
+        /// as defined in the Winnt.h header file. For example, this parameter could specify the constant,
+        /// SE_SECURITY_NAME, or its corresponding string, "SeSecurityPrivilege".
+        /// </param>
+        /// 
+        /// <param name="lpLuid">
+        /// A pointer to a variable that receives the LUID by which the privilege is
+        /// known on the system specified by the lpSystemName parameter.
+        /// </param>
+        /// 
+        /// <returns>
+        /// If the function succeeds, the function returns nonzero.
+        ///  If the function fails, it returns zero. To get extended error information, call GetLastError.
+        /// </returns>
+        ///
+        /// <requirements>
+        /// Minimum supported client 	Windows XP [desktop apps | UWP apps]
+        /// Minimum supported server 	Windows Server 2003 [desktop apps | UWP apps]
+        /// Target Platform 	        Windows
+        /// Header 	                    winbase.h (include Windows.h)
+        /// Library 	                Advapi32.lib
+        /// DLL 	                    Advapi32.dll
+        /// </requirements>
+        [DllImport("advapi32.dll")]
+        public static extern int LookupPrivilegeValueA(string lpSystemName, string lpName, out LUID lpLuid);
     }
 }
