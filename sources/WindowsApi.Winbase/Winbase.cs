@@ -1,5 +1,5 @@
 // WindowsApi
-// Copyright (C) 2020-2022 Dust in the Wind
+// Copyright (C) 2020-2023 Dust in the Wind
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -127,6 +127,6 @@ namespace DustInTheWind.WindowsApi.Winbase
         /// DLL 	                    Advapi32.dll
         /// </requirements>
         [DllImport("advapi32.dll")]
-        public static extern int LookupPrivilegeValueA(string lpSystemName, string lpName, out LUID lpLuid);
+        public static extern bool LookupPrivilegeValueA(string lpSystemName, string lpName, out LUID lpLuid);
     }
 }

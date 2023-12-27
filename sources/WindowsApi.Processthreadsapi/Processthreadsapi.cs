@@ -25,6 +25,6 @@ namespace DustInTheWind.WindowsApi.ProcessthreadsapiHeader
         public static extern int GetCurrentProcess();
 
         [DllImport("advapi32.dll")]
-        public static extern int OpenProcessToken(int processHandle, int desiredAccess, out int tokenHandle);
+        public static extern bool OpenProcessToken(int processHandle, AccessTokens desiredAccess, out int tokenHandle);
     }
 }

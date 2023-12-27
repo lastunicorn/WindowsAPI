@@ -14,11 +14,25 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.WindowsApi.Winbase
+namespace DustInTheWind.WindowsApi.Winnt
 {
+    /// <summary>
+    /// This structure is used by the ID3D12Device::GetAdapterLuid and GetSharedResourceAdapterLuid methods.
+    /// </summary>
+    ///
+    /// <requirements>
+    /// Header 	winnt.h
+    /// </requirements>
     public struct LUID
     {
-        public int UsedPart;
-        public int IgnoredForNowHigh32BitPart;
+        /// <summary>
+        /// Specifies a DWORD that contains the unsigned lower numbers of the id.
+        /// </summary>
+        public int LowPart;
+
+        /// <summary>
+        /// Specifies a LONG that contains the signed high numbers of the id.
+        /// </summary>
+        public int HighPart;
     }
 }

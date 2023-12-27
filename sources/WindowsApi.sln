@@ -35,11 +35,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.ProcessEnv", "Wi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.ConsoleApi", "WindowsApi.ConsoleApi\WindowsApi.ConsoleApi.csproj", "{966A8D95-0AA8-4096-9FA7-6E62F4304C15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApi.Processthreadsapi", "WindowsApi.Processthreadsapi\WindowsApi.Processthreadsapi.csproj", "{B861797B-6406-40E2-9E74-91EF5174A08E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsApi.Processthreadsapi", "WindowsApi.Processthreadsapi\WindowsApi.Processthreadsapi.csproj", "{B861797B-6406-40E2-9E74-91EF5174A08E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{B822A180-8144-4529-89F7-3B8C3B20CE84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{CA3FE413-13A2-46B5-8603-E6A46F1EE0A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApi.Powrprof", "WindowsApi.Powrprof\WindowsApi.Powrprof.csproj", "{7E34E194-1F4C-4320-A960-43B0B3797425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApi.Securitybaseapi", "WindowsApi.Securitybaseapi\WindowsApi.Securitybaseapi.csproj", "{2A9076B7-FD3C-4861-8945-F393C2B664F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApi.WinError", "WindowsApi.WinError\WindowsApi.WinError.csproj", "{3186B2C6-396B-42D5-9115-CB97A9161C3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{64EF8436-EBFC-4A07-9BFC-08916478A986}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +111,22 @@ Global
 		{B861797B-6406-40E2-9E74-91EF5174A08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B861797B-6406-40E2-9E74-91EF5174A08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B861797B-6406-40E2-9E74-91EF5174A08E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E34E194-1F4C-4320-A960-43B0B3797425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E34E194-1F4C-4320-A960-43B0B3797425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E34E194-1F4C-4320-A960-43B0B3797425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E34E194-1F4C-4320-A960-43B0B3797425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A9076B7-FD3C-4861-8945-F393C2B664F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9076B7-FD3C-4861-8945-F393C2B664F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9076B7-FD3C-4861-8945-F393C2B664F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9076B7-FD3C-4861-8945-F393C2B664F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3186B2C6-396B-42D5-9115-CB97A9161C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3186B2C6-396B-42D5-9115-CB97A9161C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3186B2C6-396B-42D5-9115-CB97A9161C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3186B2C6-396B-42D5-9115-CB97A9161C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64EF8436-EBFC-4A07-9BFC-08916478A986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64EF8436-EBFC-4A07-9BFC-08916478A986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64EF8436-EBFC-4A07-9BFC-08916478A986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64EF8436-EBFC-4A07-9BFC-08916478A986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,6 +145,9 @@ Global
 		{8ABB9240-BB85-4123-9363-29A15CBA7E90} = {CA3FE413-13A2-46B5-8603-E6A46F1EE0A8}
 		{966A8D95-0AA8-4096-9FA7-6E62F4304C15} = {CA3FE413-13A2-46B5-8603-E6A46F1EE0A8}
 		{B861797B-6406-40E2-9E74-91EF5174A08E} = {CA3FE413-13A2-46B5-8603-E6A46F1EE0A8}
+		{7E34E194-1F4C-4320-A960-43B0B3797425} = {CA3FE413-13A2-46B5-8603-E6A46F1EE0A8}
+		{2A9076B7-FD3C-4861-8945-F393C2B664F6} = {CA3FE413-13A2-46B5-8603-E6A46F1EE0A8}
+		{3186B2C6-396B-42D5-9115-CB97A9161C3C} = {CA3FE413-13A2-46B5-8603-E6A46F1EE0A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B9EA9D8-7C6E-4822-91F5-43CA2498084B}

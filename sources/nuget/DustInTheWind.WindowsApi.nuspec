@@ -19,11 +19,14 @@
         <dependency id="DustInTheWind.WindowsApi.Errhandlingapi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Fileapi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Handleapi" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Powrprof" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.ProcessEnv" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Processthreadsapi" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.Securitybaseapi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Sysinfoapi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Winbase" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Windef" version="$version$" exclude="Build,Analyzers" />
+        <dependency id="DustInTheWind.WindowsApi.WinError" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Wingdi" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Winnt" version="$version$" exclude="Build,Analyzers" />
         <dependency id="DustInTheWind.WindowsApi.Winuser" version="$version$" exclude="Build,Analyzers" />

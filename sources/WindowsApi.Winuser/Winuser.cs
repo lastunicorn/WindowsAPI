@@ -60,7 +60,7 @@ namespace DustInTheWind.WindowsApi.Winuser
         /// API set 	                ext-ms-win-ntuser-misc-l1-5-1 (introduced in Windows 10, version 10.0.14393)
         /// </requirements>
         [DllImport("user32.dll")]
-        public static extern int LockWorkStation();
+        public static extern bool LockWorkStation();
 
         /// <summary>
         /// Logs off the interactive user, shuts down the system, or shuts down and restarts the system.
@@ -88,6 +88,6 @@ namespace DustInTheWind.WindowsApi.Winuser
         /// </returns>
         /// 
         [DllImport("user32.dll")]
-        public static extern int ExitWindowsEx(ExitWindowsFlags uFlags, SystemShutdownReason dwReason);
+        public static extern bool ExitWindowsEx(ExitWindowsFlags uFlags, SystemShutdownReason dwReason);
     }
 }
