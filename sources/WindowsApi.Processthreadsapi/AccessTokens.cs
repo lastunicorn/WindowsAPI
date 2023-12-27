@@ -14,8 +14,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+using System;
+
 namespace DustInTheWind.WindowsApi.ProcessthreadsapiHeader
 {
+    [Flags]
     public enum AccessTokens : uint
     {
         STANDARD_RIGHTS_REQUIRED = 0x000F0000,

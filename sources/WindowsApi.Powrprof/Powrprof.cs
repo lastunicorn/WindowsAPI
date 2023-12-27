@@ -63,6 +63,6 @@ namespace DustInTheWind.WindowsApi.Powrprof
         /// DLL 	                    PowrProf.dll
         /// </requirements>
         [DllImport("powrprof.dll")]
-        public static extern bool SetSuspendState(int bHibernate, int bForce, int bWakeupEventsDisabled);
+        public static extern bool SetSuspendState(bool bHibernate, bool bForce, bool bWakeupEventsDisabled);
     }
 }
